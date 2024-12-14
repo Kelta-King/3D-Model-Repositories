@@ -13,7 +13,20 @@ def recognize_image(image_url):
     image = Image.open(requests.get(image_url, stream=True).raw)
 
     # Define labels/descriptions for recognition
-    labels = ["a car", "a red car", "a human brain", "a human heart", "a tree", "a building", "Cannot determine"]
+    labels = [
+        "Nature",
+        "Sun",
+        "Car", 
+        "Red car", 
+        "Human Brain", 
+        "Human Heart", 
+        "Tree", 
+        "Building", 
+        "Bottle", 
+        "DNA sequence",
+        "Text",
+        "Cannot Determine"
+    ]
 
     # Preprocess the inputs
     inputs = processor(text=labels, images=image, return_tensors="pt", padding=True)

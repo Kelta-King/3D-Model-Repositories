@@ -37,7 +37,7 @@ function callPythonScript(imageUrl) {
 }
 
 // Example usage
-const imageUrl = "https://p.turbosquid.com/ts-thumb/MU/LVThPn/j3/heart/png/1680868646/1920x1080/turn_fit_q99/110abd605f71c1913030be5ea04b8ef2eee6c269/heart-1.jpg";
+const imageUrl = "https://img.freepik.com/free-vector/vector-hand-drawn-timothy-font-typography_53876-174787.jpg";
 
 callPythonScript(imageUrl)
     .then((response) => {
